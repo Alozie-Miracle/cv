@@ -273,8 +273,8 @@ const projects = [
       },
     ],
     image: cv,
-    source_code_link: "https://github.com/",
-    website_link: "http://localhost:3000",
+    source_code_link: "https://github.com/Alozie-Miracle/cv",
+    website_link: "https://cv-tau-gules.vercel.app/",
   },
   {
     name: "Ilorin Microfinance Bank",
