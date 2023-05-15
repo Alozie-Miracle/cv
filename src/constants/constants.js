@@ -13,8 +13,6 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
   starbucks,
   ilorine,
   lecturehub,
