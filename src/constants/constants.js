@@ -219,7 +219,7 @@ const projects = [
       },
     ],
     image: airbnb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Alozie-Miracle/airbnb-2",
     website_link: "https://airbnb-nine-self.vercel.app/",
   },
   {
@@ -241,7 +241,7 @@ const projects = [
       },
     ],
     image: fb,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Alozie-Miracle/facebook-clone",
     website_link: "https://myfacebook-clone-1.vercel.app/",
   },
   {
