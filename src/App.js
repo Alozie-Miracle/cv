@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import { motion } from "framer-motion";
+
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Works,
+  StarsCanvas,
+  Tech,
+} from "./components";
+import { styles } from "./styles";
+import { staggerContainer } from "./utils/motion";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <motion.section
+          variants={staggerContainer()}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, animate: 0.25 }}
+          className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
+          <Contact />
+          <StarsCanvas />
+        </motion.section>
+      </div>
+    </BrowserRouter>
   );
 }
 
